@@ -20,4 +20,6 @@ MessageSchema.index({
   userId: 1
 });
 
-module.exports = mongoose.model('Message', MessageSchema);
+var msg = mongoose.model('Message', MessageSchema);
+
+module.exports = msg;
